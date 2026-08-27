@@ -20,10 +20,6 @@ const emit = defineEmits(['confirmar', 'fechar'])
         <strong>{{ props.produto.nome }}</strong>?
       </p>
 
-      <p class="aviso">
-        Essa ação não poderá ser desfeita.
-      </p>
-
       <div class="modal-actions">
         <button
           type="button"
@@ -77,11 +73,6 @@ const emit = defineEmits(['confirmar', 'fechar'])
 .modal-content p {
   margin-bottom: 10px;
   line-height: 1.5;
-}
-
-.aviso {
-  color: #dc3545;
-  font-size: 14px;
 }
 
 .modal-actions {
